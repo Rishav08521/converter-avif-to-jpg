@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIF to JPG Converter | Rishav Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <header>
+            <h1>AVIF <i class="fa-solid fa-arrow-right-arrow-left"></i> JPG</h1>
+            <p>High-quality, instant image conversion</p>
+        </header>
+
+        <main>
+            <div class="upload-area" id="drop-zone">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <p>Drag & Drop AVIF image or <span>Browse</span></p>
+                <input type="file" id="file-input" accept=".avif" hidden>
+            </div>
+
+            <div id="preview-container" class="hidden">
+                <div class="preview-box">
+                    <canvas id="conversion-canvas" class="hidden"></canvas>
+                    <img id="image-preview" src="" alt="Preview">
+                    <div class="file-info">
+                        <span id="file-name">filename.avif</span>
+                    </div>
+                    <button id="download-btn" class="btn-primary">
+                        <i class="fa-solid fa-download"></i> Download JPG
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Designed by <strong>Rishav Kumar</strong></p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@RogueNado" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/anima_tion012?igsh=cjFuaHVwNjloZzV4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:rk6854797@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
